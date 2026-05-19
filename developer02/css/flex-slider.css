@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+
+
+
+/*===== FlexSlider 최상위 요소 =====*/
+.flexslider { border: 0; border-radius: 0; overflow: hidden; margin: 0;}
+/*===== 이전/다음 버튼 =====*/
+.flex-direction-nav a {
+    height: 80px; margin: -40px 0 0;
+    color: #cccccc; z-index: 0;
+}
+/*===== 이전 버튼 : 마우스 오버 =====*/
+.flexslider:hover .flex-direction-nav .flex-prev { left: 0; }
+/*===== 이전/다음 버튼 : 부트스트랩 아이콘 =====*/
+.bi-chevron-left,.bi-chevron-right { font-size: 45px; }
+/*===== 블릿 버튼 =====*/
+.flex-control-nav { bottom: 10px; display: none; }
+
+.fs-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*=====FHD flex slider=====*/
+@media screen and (min-width: 1350px) {
+    .slides li {position: relative;}
+    .fs-item {height: 500px;}
+    .fs-bg1 {background-image: url('../imgs/fhd-slide1.jpg');}
+    .fs-bg2 {background-image: url('../imgs/fhd-slide2.jpg');}
+    .fs-cts {
+        position: absolute; left: 50%; top: 220px;
+        width: 1300px; padding: 0 30px;
+        z-index: 10;
+        transform: translateX(-50%);
+        color: #f6f6f6;
+    }
+    .fs-cts h2 {
+        font-size: 52px; text-transform: uppercase;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7);
+    }
+    .fs-cts p {
+        width: 595px;
+        font-family: "NanumBarunGothic";
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+/*=====HD flex slider=====*/
+
+@media screen and (min-width: 1050px) and (max-width: 1349px) {
+    .slides li {position: relative;}
+    .fs-item {height: 450px;}
+    .fs-bg1 {background-image: url('../imgs/fhd-slide1.jpg');}
+    .fs-bg2 {background-image: url('../imgs/fhd-slide2.jpg');}
+    .fs-cts {
+        position: absolute; left: 50%; top: 220px;
+        width: 1000px; padding: 0 30px;
+        z-index: 10;
+        transform: translateX(-50%);
+        color: #f6f6f6;
+    }
+    .fs-cts h2 {
+        font-size: 48px; text-transform: uppercase;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7);
+    }
+    .fs-cts p {
+        width: 550px;
+        font-family: "NanumBarunGothic";
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+
+/*=====TB flex slider=====*/
+
+@media screen and (min-width: 600px) and (max-width: 1049px) {
+    .slides >li {position: relative;}
+    .fs-item {height: 500px;}
+    .fs-bg1 {background-image: url('../imgs/tb-slide1.jpg');}
+    .fs-bg2 {background-image: url('../imgs/tb-slide2.jpg');}
+
+    .fs-cts {
+        position: absolute; top: 230px;
+        z-index: 10;
+        color: #f6f6f6;
+    }   
+    
+    @media screen and (min-width:750px) and (max-width:1049px) {
+        .fs-cts {left: 80px; width: 660px;}
+    }
+
+    @media screen and (min-width:600px) and (max-width:749px) {
+        .fs-cts {
+            left: 50%; transform: translateX(-50%);
+            width: 400px; text-align: center;
+        }
+    }
+    
+    .fs-cts h2 {
+        font-size: 48px; text-transform: uppercase;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7);
+    }
+    .fs-cts p {width: 420px; padding-top: 10px;}
+    .flex-direction-nav a { z-index: 0; }
+}
+/*=====SM flex slider=====*/
+
+@media screen and (max-width: 599px) {
+    .slides >li {position: relative;}
+    .fs-item {height: 100vh;}
+    .fs-bg1 {background-image: url('../imgs/sm-slide1.jpg');}
+    .fs-bg2 {background-image: url('../imgs/sm-slide2.jpg');}
+
+    .fs-cts {
+        position: absolute; left: 50%; top: 50%;
+        width: 350px;
+        z-index: 10;
+        color: #f6f6f6;
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }   
+
+    .fs-cts h2 {
+        font-size: 48px; text-transform: uppercase;
+        text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7);
+    }
+    .fs-cts p {padding-top: 10px;}
+    .flex-direction-nav a { z-index: 0; }
+}

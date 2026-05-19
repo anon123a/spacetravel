@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+h3 {text-transform: capitalize;}
+
+/* =====FHD===== */
+@media screen and (min-width: 1350px) {
+    section {
+        display: flex;
+        width: 1300px; margin: 50px auto;
+    }
+    article {
+        font-family: "NanumGothic", sans-serif;
+        width: 25%; padding: 0 30px;
+        font-size: 14px; font-weight: 480;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+        background: url('../imgs/bar.png') no-repeat right center;
+    }
+    article:last-child {background: none;}
+    article h3 {font-size: 35px; color: #06f;}
+    .at-bg {height: 80px; margin: 13px 0 21px;}
+    .at-bg1 {
+        background: url('../imgs/fhd-contents1.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg2 {
+        background: url('../imgs/fhd-contents2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg3 {
+        background: url('../imgs/fhd-contents3.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg4 {
+        background: url('../imgs/fhd-contents4.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+}
+
+/* =====HD===== */
+@media screen and (min-width: 1050px) and (max-width:1349px) {
+    section {
+        display: flex;
+        width: 1000px; margin: 30px auto;
+    }
+    article {
+        font-family: "NanumGothic", sans-serif;
+        width: 25%; padding: 0 30px;
+        font-size: 13px; font-weight: 400;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+        background: url('../imgs/bar.png') no-repeat right center;
+    }
+    article:last-child {background: none;}
+    article h3 {font-size: 32px; color: #06f;}
+    .at-bg {height: 60px; margin: 13px 0 15px;}
+    .at-bg1 {
+        background: url('../imgs/fhd-contents1.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg2 {
+        background: url('../imgs/fhd-contents2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg3 {
+        background: url('../imgs/fhd-contents3.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg4 {
+        background: url('../imgs/fhd-contents4.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+}
+
+
+
+/* =====TB===== */
+@media screen and (min-width: 600px) and (max-width:1049px) {
+    section {
+        display: flex; flex-wrap: wrap;
+    }
+    article {
+        font-family: "NanumGothic", sans-serif;
+        width: 50%; margin-top: 50px ; padding: 0 30px;
+        font-size: 13px; font-weight: 400;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+        background: url('../imgs/tb-bar.png') no-repeat right center;
+    }
+    article:nth-child(2n) {background: none;}
+    article h3 {font-size: 35px; color: #06f;}
+    .at-bg {height: 100px; margin: 20px 0;}
+    .at-bg1 {background: url('../imgs/tb-contents1.jpg') no-repeat;
+        background-size: cover;
+    }
+    .at-bg2 {
+        background: url('../imgs/tb-contents2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg3 {
+        background: url('../imgs/tb-contents3.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg4 {
+        background: url('../imgs/tb-contents4.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+}
+
+/* =====SM===== */
+@media screen and (max-width:599px) {
+    section {padding: 0 20px;}
+    article {
+        font-family: "NanumGothic", sans-serif;
+        width: 100%; margin-top: 40px ; padding: 0 30px 40px;
+        font-size: 13px; font-weight: 400;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+        background: url('../imgs/sm-bar.png') no-repeat center bottom;
+    }
+    article:nth-child(4) {background: none;}
+    article h3 {font-size: 35px; color: #06f; text-align: center;}
+    .at-bg {height: 100px; margin: 20px 0;}
+    .at-bg1 {background: url('../imgs/tb-contents1.jpg') no-repeat;
+        background-size: cover;
+    }
+    .at-bg2 {
+        background: url('../imgs/tb-contents2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg3 {
+        background: url('../imgs/tb-contents3.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .at-bg4 {
+        background: url('../imgs/tb-contents4.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+}
